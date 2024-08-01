@@ -15,3 +15,19 @@ To run:
     python3 knn-algorithm.py
 
 ## Directory: project
+In this directory, you will find my project. The following files can be found in this directory:
+* output.mp4
+* project.py
+* tracker.py
+* yolov9c.pt
+
+### Overview
+"output.mp4" is a video I took with my phone. It is in Manhattan. I scaled it down so processing is faster. "tracker.py" is a file used to tracker the cars after detection is made. "yolov9c.pt" is a model provided by YOLO for object detection. We focused specifically on the car detection. "project.py" is the project itself. It has comments to document what is happening throughout the code.
+
+### Reflection
+This project was interesting. It showed me the different aspects that go into  detection. However there is changes that I would make which will make the software better. For example, the video was caputure some a high angle and tried to capture 2 traffics lights. The video was also taken by hand and therefore not static.  This means that the reference point (the crosswalk lines) was moved as the video progresses. This is not ideal because it makes the measurement inaccurate. The program is also pretty slow. That is because computation is done on the cpu. Threading  would benefit this program but I didn't include it to not complicate things. 
+
+### How to Run
+Make sure that all the files are on the same directory. Then run this command:
+
+    python3 project.py
